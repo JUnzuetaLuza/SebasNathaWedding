@@ -351,6 +351,62 @@ body, html {
     display: inline-block;
 }
 
+/* --- PALPA SECTION --- */
+.palpa-info {
+    width: 100%;
+    min-width: 0;
+    height: 50vh;
+    background: #fffdf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.palpa-columns {
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.palpa-text {
+    flex: 1;
+    min-width: 220px;
+}
+
+.palpa-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #b89c6b;
+    margin-bottom: 1em;
+}
+
+.palpa-desc {
+    font-size: 1.1rem;
+    color: #7a5c3a;
+    line-height: 1.7;
+}
+
+.palpa-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+}
+
+.palpa-img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    background: #eaeaea;
+}
+
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 768px) {
@@ -434,5 +490,22 @@ body, html {
     .dress-img {
         width: 40px;
         height: 40px;
+    }
+
+    
+    /* -- PALPA MEDIA QUERIES -- */
+    .palpa-info {
+        height: auto;
+        padding: 2em 0;
+    }
+    .palpa-columns {
+        flex-direction: column;
+        gap: 1.5em;
+        max-width: 100%;
+    }
+    .palpa-img {
+        width: 100%;
+        max-width: 320px;
+        height: 140px;
     }
 }

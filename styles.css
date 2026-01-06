@@ -27,6 +27,20 @@ body, html {
     z-index: 1;
 }
 
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(
+        to top,
+        #fffdf6,
+        rgba(255, 255, 255, 0)
+    );
+    z-index: 2;
+}
+
 .hero h1 {
     position: absolute;
     z-index: 2;
@@ -34,7 +48,7 @@ body, html {
     font-size: 5rem;
     color: #FFFDFE;
     padding: 0.7em 1.2em;
-    border-radius: 16px;
+    border-radius: 1rem;
     font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
     text-align: center;
 }
@@ -52,10 +66,10 @@ body, html {
 .bible-verse blockquote {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #7a5c3a;
+    color: #977953;
     background: rgba(255, 255, 255, 0.8);
     padding: 1.5em 2em;
-    border-radius: 18px;
+    border-radius: 1rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     text-align: center;
     max-width: 600px;
@@ -86,34 +100,34 @@ body, html {
 .blessing-text {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #7a5c3a;
+    color: #977953;
     margin-bottom: 2em;
     text-align: center;
 }
 
 .parents-columns {
     display: flex;
-    gap: 10em;
-    width: 100%;
-    max-width: 700px;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 75%;
 }
 
 .parents-group {
     background: rgba(255,255,255,0.8);
-    border-radius: 14px;
+    border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    height: 20vh;
     padding: 1em 2em;
-    margin: 1em;
-    min-width: 200px;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .parents-group h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #b89c6b;
-    margin-bottom: 1em;
 }
 
 .parents-group ul {
@@ -123,9 +137,8 @@ body, html {
 }
 
 .parents-group li {
-    font-size: 1rem;
-    color: #7a5c3a;
-    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    color: #977953;
 }
 
 /* --- DETAILS QUERIES --- */
@@ -144,8 +157,8 @@ body, html {
 
 .details-intro {
     font-family: 'Playfair Display', serif;
-    font-size: 1.7rem;
-    color: #7a5c3a;
+    font-size: 2rem;
+    color: #977953;
     text-align: center;
     margin-bottom: 1.5em;
 }
@@ -168,7 +181,7 @@ body, html {
 
 .date-day {
     font-size: 4.5rem;
-    color: #7a5c3a;
+    color: #977953;
     font-weight: bold;
     margin: 0 0.2em;
     text-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -183,40 +196,42 @@ body, html {
 
 .details-columns {
     display: flex;
-    gap: 2em;
-    justify-content: center;
-    width: 100%;
-    max-width: 700px;
+    justify-content: space-evenly;
+    width: 75%;
 }
 
 .details-card {
     background: rgba(255,255,255,0.95);
-    border-radius: 16px;
+    border-radius: 1rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     padding: 1em 2em;
-    margin: 1em;
-    min-width: 180px;
+    width: 20vw;
+    height: 50vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.details-icon {
-    margin-bottom: 1em;
+.details-icon-img {
+    width: 10em;
+    height: 10em;
 }
 
 .details-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #b89c6b;
-    margin-bottom: 0.7em;
 }
 
 .details-location {
-    font-size: 1rem;
-    color: #7a5c3a;
-    margin-bottom: 1.2em;
+    font-size: 1.2rem;
+    color: #977953;
+}
+
+.details-direction {
+    font-size: 0.9rem;
+    color: #977953;
 }
 
 .details-map-btn {
@@ -226,21 +241,23 @@ body, html {
     background: #b89c6b;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 0.6em 1.2em;
-    font-size: 1rem;
+    margin: auto 0;
+    font-size: 1.2rem;
     font-family: inherit;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 .details-map-btn:hover {
-    background: #7a5c3a;
+    background: #977953;
 }
 
 .map-icon {
-    display: flex;
-    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0.7;
 }
 
 /* --- DRESS CODE SECTION --- */
@@ -262,92 +279,61 @@ body, html {
     font-size: 2.5rem;
     color: #b89c6b;
     letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
-.dress-subtitle {
-    font-size: 1.3rem;
-    color: #7a5c3a;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 2em;
     text-align: center;
 }
 
 .dress-columns {
     display: flex;
-    gap: 3em;
-    justify-content: center;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 2em;
+    justify-content: space-evenly;
+    width: 75%;
 }
 
 .dress-card {
     background: rgba(255,255,255,0.9);
-    border-radius: 18px;
+    border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     padding: 1em 2em;
-    margin: 1em;
-    min-width: 180px;
+    margin: 2em 0;
+    height: 20em;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.dress-img-circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-    overflow: hidden;
+    justify-content: space-evenly;
 }
 
 .dress-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    opacity: 0.7;
+    width: 15em;
+    height: 15em;
 }
 
 .dress-label {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: 2rem;
     color: #b89c6b;
-    margin-bottom: 0.5em;
 }
 
 .dress-desc {
-    font-size: 1rem;
-    color: #7a5c3a;
-    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    color: #977953;
 }
 
-.dress-avoid-title {
-    font-size: 1.1rem;
-    color: #7a5c3a;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0.7em;
-    text-align: center;
+.dress-subtitle {
+    letter-spacing: 0;
 }
 
 .dress-avoid-colors {
     display: flex;
-    gap: 0.7em;
     justify-content: center;
-    margin-bottom: 1em;
+    margin: 2em;
 }
 
 .color-circle {
-    width: 28px;
-    height: 28px;
+    width: 5em;
+    height: 5em;
+    margin: 0 1em;
     border-radius: 50%;
-    border: 2px solid #b89c6b;
+    border: 2px solid #00000050;
     display: inline-block;
 }
 
@@ -386,7 +372,7 @@ body, html {
 
 .palpa-desc {
     font-size: 1.1rem;
-    color: #7a5c3a;
+    color: #977953;
     line-height: 1.7;
 }
 
@@ -402,7 +388,7 @@ body, html {
     width: 260px;
     height: 180px;
     object-fit: cover;
-    border-radius: 18px;
+    border-radius: 1rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     background: #eaeaea;
 }
@@ -440,7 +426,7 @@ body, html {
     width: 260px;
     height: 180px;
     object-fit: cover;
-    border-radius: 18px;
+    border-radius: 1rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     background: #eaeaea;
 }
@@ -459,7 +445,7 @@ body, html {
 
 .regalos-desc {
     font-size: 1.1rem;
-    color: #7a5c3a;
+    color: #977953;
     line-height: 1.7;
 }
 
@@ -486,8 +472,8 @@ body, html {
         padding: 2em 0;
     }
     .blessing-text {
-        font-size: 1.2rem;
-        margin-bottom: 1em;
+        font-size: 1.5rem;
+        margin: 1em;
     }
     .parents-columns {
         flex-direction: column;
@@ -504,12 +490,20 @@ body, html {
         height: auto;
         padding: 2em 0;
     }
+    .details-intro {
+        font-size: 1.5rem;
+        margin: 1em;
+    }
     .details-date {
         flex-direction: column;
+        align-items: center;
         gap: 0;
     }
-    .date-month, .date-day, .date-year {
+    .date-month, .date-year {
         font-size: 2rem;
+    }
+    .date-day {
+        font-size: 3rem;
     }
     .details-columns {
         flex-direction: column;
@@ -518,6 +512,7 @@ body, html {
     }
     .details-card {
         padding: 1em 1em;
+        width: auto;
         min-width: 0;
     }
 
@@ -542,10 +537,6 @@ body, html {
     .dress-img-circle {
         width: 70px;
         height: 70px;
-    }
-    .dress-img {
-        width: 40px;
-        height: 40px;
     }
 
     
@@ -587,4 +578,43 @@ body, html {
         max-width: 320px;
         height: 140px;
     }
+}
+
+/* --- ASISTENCIA SECTION --- */
+.asistencia {
+    width: 100%;
+    min-width: 0;
+    height: 50vh;
+    background: #f8f3ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+.asistencia-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #b89c6b;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.asistencia-desc {
+    font-size: 1.1rem;
+    color: #977953;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.asistencia-btn {
+    background: #b89c6b;
+    color: #fffdf6;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.asistencia-btn:hover {
+    background: #a07f4f;
 }

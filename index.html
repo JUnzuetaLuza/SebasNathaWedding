@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian & Nathaniel</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,15 +26,15 @@
             <div class="parents-group">
                 <h3>Padres de Sebastian</h3>
                 <ul>
-                    <li>Nombre del padre</li>
-                    <li>Nombre de la madre</li>
+                    <li>Jorge Salazar Palacios</li>
+                    <li>Maria Arévalo Chong</li>
                 </ul>
             </div>
             <div class="parents-group">
                 <h3>Padres de Nathaniel</h3>
                 <ul>
-                    <li>Nombre del padre</li>
-                    <li>Nombre de la madre</li>
+                    <li>Juan Boluarte Mestas</li>
+                    <li>Graciela Palomino Cáceres</li>
                 </ul>
             </div>
         </div>
@@ -50,45 +50,22 @@
         </div>
         <div class="details-columns">
             <div class="details-card">
-                <div class="details-icon">
-                    <!-- Icono iglesia SVG -->
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M20 6 L28 14 V34 H12 V14 L20 6 Z" stroke="#b89c6b" stroke-width="2" fill="#fffdf6"/>
-                        <rect x="17" y="24" width="6" height="10" fill="#b89c6b"/>
-                    </svg>
-                </div>
+                <img src="./img/iglesia.png" alt="icono iglesia" class="details-icon-img">
                 <h3 class="details-title">Ceremonia</h3>
-                <div class="details-location">Lorem ipsum dolor sit amet, iglesia principal</div>
-                <button class="details-map-btn">
-                    <span class="map-icon">
-                        <!-- Icono ubicación SVG -->
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M9 2C6.24 2 4 4.24 4 7c0 4.25 5 9 5 9s5-4.75 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 9 5a1.5 1.5 0 0 1 0 3.5z" fill="#fff"/>
-                        </svg>
-                    </span>
+                <div class="details-location">Parroquia Corazón de María</br>14:00 hs</div>
+                <p class="details-direction">C. 28 de Julio 523</br>Magdalena del Mar</p>
+                <button class="details-map-btn" id="ceremonia">
+                    <img src="./img/placeholder.png" alt="icono ubicación" class="map-icon">
                     Ver mapa
                 </button>
             </div>
             <div class="details-card">
-                <div class="details-icon">
-                    <!-- Icono copas SVG -->
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M12 10 Q20 20 28 10" stroke="#b89c6b" stroke-width="2" fill="none"/>
-                        <ellipse cx="16" cy="10" rx="4" ry="6" fill="#fffdf6" stroke="#b89c6b" stroke-width="2"/>
-                        <ellipse cx="24" cy="10" rx="4" ry="6" fill="#fffdf6" stroke="#b89c6b" stroke-width="2"/>
-                        <rect x="15" y="22" width="2" height="10" fill="#b89c6b"/>
-                        <rect x="23" y="22" width="2" height="10" fill="#b89c6b"/>
-                    </svg>
-                </div>
+                <img src="./img/copas.png" alt="copas de brindis" class="details-icon-img">
                 <h3 class="details-title">Recepción</h3>
-                <div class="details-location">Lorem ipsum dolor sit amet, salón de eventos</div>
-                <button class="details-map-btn">
-                    <span class="map-icon">
-                        <!-- Icono ubicación SVG -->
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M9 2C6.24 2 4 4.24 4 7c0 4.25 5 9 5 9s5-4.75 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 9 5a1.5 1.5 0 0 1 0 3.5z" fill="#fff"/>
-                        </svg>
-                    </span>
+                <div class="details-location">Villa Illariy</br>17:00 hs</div>
+                <p class="details-direction">La Alameda</br>Pachacamac</p>
+                <button class="details-map-btn" id="recepcion">
+                    <img src="./img/placeholder.png" alt="icono ubicación" class="map-icon">
                     Ver mapa
                 </button>
             </div>
@@ -96,31 +73,23 @@
     </section>
     <section class="dress-code">
         <h2 class="dress-title">DRESS CODE</h2>
-        <div class="dress-subtitle">FORMAL</div>
         <div class="dress-columns">
             <div class="dress-card">
-                <div class="dress-img-circle">
-                    <!-- Placeholder imagen hombres -->
-                    <img src="img/placeholder-men.png" alt="Guía hombres" class="dress-img">
-                </div>
+                <img src="./img/traje.png" alt="Guía hombres" class="dress-img">
                 <div class="dress-label">HOMBRES</div>
                 <div class="dress-desc">Traje Completo</div>
             </div>
             <div class="dress-card">
-                <div class="dress-img-circle">
-                    <!-- Placeholder imagen mujeres -->
-                    <img src="img/placeholder-women.png" alt="Guía mujeres" class="dress-img">
-                </div>
+                <img src="./img/vestido.png" alt="Guía mujeres" class="dress-img">
                 <div class="dress-label">MUJERES</div>
-                <div class="dress-desc">Traje Completo</div>
+                <div class="dress-desc">Vestido Largo</div>
             </div>
         </div>
-        <div class="dress-avoid-title">Colores a evitar</div>
+        <div class="dress-title dress-subtitle">Colores a evitar</div>
         <div class="dress-avoid-colors">
-            <span class="color-circle" style="background:#fff;"></span>
-            <span class="color-circle" style="background:#f5e6e6;"></span>
-            <span class="color-circle" style="background:#eaeaea;"></span>
-            <!-- Agrega más colores si lo necesitas -->
+            <span class="color-circle" style="background:#FFFDFE;"></span>
+            <span class="color-circle" style="background:#233B74;"></span>
+            <span class="color-circle" style="background:#977953;"></span>
         </div>
     </section>
     <section class="palpa-info">
@@ -150,5 +119,22 @@
             </div>
         </div>
     </section>
+    <section class="asistencia">
+        <h2 class="asistencia-title">CONFIRMA TU ASISTENCIA</h2>
+        <p class="asistencia-desc">
+            Agradeceremos confirmar su asistencia antes del 1 de Mayo de 2026
+            <br/>O aqui va el icono de calendario o imagen que indique que va a wspp
+        </p>
+        <button class="asistencia-btn">Confirmar Asistencia</button>
+    </section>
 </body>
+    <script>
+        document.getElementById('ceremonia').addEventListener('click', function () {
+            window.open('https://www.google.com/maps/place/Immaculate+Heart+of+Mary+Church/@-12.0868028,-77.0689703,20.75z/data=!4m6!3m5!1s0x9105c9081c067e7b:0x52659c43dea613a!8m2!3d-12.086785!4d-77.0688923!16s%2Fg%2F12qgcdzlv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D', '_blank', 'noopener,noreferrer');
+        });
+        
+        document.getElementById('recepcion').addEventListener('click', function () {
+            window.open('https://www.google.com/maps/place/Villa+Illariy/@-12.2147915,-76.8710156,17z/data=!3m1!4b1!4m6!3m5!1s0x9105bdcb3727c56f:0xdb806d221294116f!8m2!3d-12.2147915!4d-76.8684407!16s%2Fg%2F11fl90g1l9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D', '_blank', 'noopener,noreferrer');
+        });
+    </script>
 </html>

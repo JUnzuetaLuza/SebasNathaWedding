@@ -90,7 +90,7 @@ body, html {
 
 .blessing-parents {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color: #f8f3ea;
     background-image: url("./img/pattern.png");
     background-repeat: repeat;      
@@ -112,9 +112,10 @@ body, html {
 
 .parents-columns {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     width: 75%;
-    margin: 2em;
+    margin: 1em;
 }
 
 .parents-group {
@@ -122,7 +123,7 @@ body, html {
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     height: auto;
-    
+
     padding: 2em 2em;
     display: flex;
     text-align: center;
@@ -557,6 +558,10 @@ body, html {
     .dress-img-circle {
         width: 70px;
         height: 70px;
+    }
+    .color-circle {
+        width: 3em;
+        height: 3em;
     }
 
     

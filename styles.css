@@ -549,7 +549,7 @@ body, html {
         max-width: 100%;
     }
     .dress-card {
-        padding: 1em 1em 0.7em 1em;
+        padding: 1em 1em 2em 1em;
         min-width: 0;
     }
     .dress-img-circle {
@@ -562,6 +562,9 @@ body, html {
     .palpa-info {
         height: auto;
         padding: 2em 0;
+    }
+    .palpa-text {
+        width: 80%;
     }
     .palpa-columns {
         flex-direction: column;
@@ -579,6 +582,9 @@ body, html {
     .regalos-info {
         height: auto;
         padding: 2em 0;
+    }
+    .regalos-text {
+        width: 80%;
     }
     .regalos-columns {
         flex-direction: column;
@@ -624,12 +630,13 @@ body, html {
     font-size: 1.1rem;
     color: #977953;
     text-align: center;
-    margin-bottom: 1.5em;
+    width: 80%;
 }
 .asistencia-btn {
     background: #b89c6b;
     color: #fffdf6;
     border: none;
+    margin: 1em 0;
     padding: 0.8em 2em;
     font-size: 1.1rem;
     border-radius: 1rem;

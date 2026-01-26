@@ -48,7 +48,7 @@ body, html {
     color: #FFFDFE;
     padding: 0.7em 1.2em;
     border-radius: 1rem;
-    font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
+    font-family: 'Cookie', cursive;
     text-align: center;
 }
 
@@ -188,7 +188,7 @@ body, html {
     font-size: 2.5rem;
     color: #b89c6b;
     font-weight: bold;
-    letter-spacing: 0.3em;
+    /* letter-spacing: 0.3em; */
 }
 
 .date-day {
@@ -203,7 +203,7 @@ body, html {
     font-size: 2.5rem;
     color: #b89c6b;
     font-weight: bold;
-    letter-spacing: 0.3em;
+    /* letter-spacing: 0.3em; */
 }
 
 .details-columns {
@@ -473,6 +473,10 @@ body, html {
 
 @media (max-width: 768px) {
     /* -- HERO MEDIA QUERIES -- */
+    .hero-img {
+        object-position: 60% center ; 
+    }
+
     .hero h1 {
         font-size: 4rem;
         top: 0; left: 0;
